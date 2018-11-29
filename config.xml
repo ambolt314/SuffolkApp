@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="uk.ac.uos.suffolkapp" version="1.0.0">
+
+<name>University of Suffolk</name>
+<description>An app about Suffolk</description>
+<author email="S188219@uos.ac.uk">Andrew Bolt</author>
+<access origin="*"/>
+<plugin name="cordova-plugin-whitelist"/>
+</widget>
