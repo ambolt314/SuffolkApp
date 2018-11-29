@@ -12,7 +12,7 @@
 
 <body>
 
-<!-- Home page -->
+  <!-- Home page -->
   <div data-role="page" id="home-page">
     <div data-role="header">
       <img src="images/logo.png"/>
@@ -24,6 +24,8 @@
     </div>
 
     <button onclick="location.href='index.html#about-page'">About the university</button>
+    <button onclick="location.href='index.html#faq-page'">Frequently asked questions (FAQ)</button>
+    <button onclick="location.href='index.html#currency-page'">Currency converter</button>
 
 
     <div data-role="footer">
@@ -32,7 +34,7 @@
   </div>
 
 
-<!-- About page -->
+  <!-- About page -->
   <div data-role="page" id="about-page">
     <div data-role="header">
       <h1>About the university</h1>
@@ -40,20 +42,98 @@
 
 
     <div role="main" class="ui-content">
-      <p>Founded in August 2016, famous people linked to the university include Helen Pankhurst, Ed Sheeran and Bill Turnbull. They offer many courses of varying quality, with emphasis on Social Sciences. The president of the Students Union is Georgia Downs, and the vice-president is Amy Grant.</p>
+      <p>Founded in August 2016, this is Suffolk's first university.</p>
     </div>
 
-<button onclick="location.href='index.html#home-page'">Back to homepage</button>
+    <button onclick="location.href='index.html#home-page'">Back to homepage</button>
 
     <div data-role="footer">
       <h4>Andrew Bolt (S188219)</h4>
     </div>
   </div>
 
+  <!-- Frequently asked questions page -->
+  <div data-role="page" id="faq-page">
+    <div data-role="header">
+      <h1>FAQ</h1>
+    </div>
+
+
+    <p>Here are some questions we get asked the most about applying to the University of Suffolk</p>
+    <div data-role="collapsible-set">
+
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>What can I study here?</h3>
+        <p>We offers many courses, specialising in health and social sciences. Our schools are:</p>
+        <ul>
+          <li>Science, Technology and Engineering</li>
+          <li>Art, Design and Humanities</li>
+          <li>Law and Social Science</li>
+
+        </ul>
+      </div>
+
+
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>Where is UoS?</h3>
+        <p>We have campuses across Suffolk, but our epicentre is Ipswich. We're at the Waterfront building about 10 minutes from the station, you can't miss us!</p>
+      </div>
+
+
+
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>What's the social life like?</h3>
+        <p>There are societies you can join but, as a new university, we need more and better ones. There are also great freshers events and we have the Summer Ball in May</p>
+      </div>
+
+
+
+
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>What grades do I need to get in?</h3>
+        <p>We accept three C grades at A-Level or equivalent as a minimum, but this depends on the course</p>
+      </div>
+
+
+    </div>
+    <button onclick="location.href='index.html#home-page'">Back to homepage</button>
+  </div>
+
+
+
+
+  <!-- Currency converter -->
+  <div data-role="page" id="currency-page">
+    <div data-role="header">
+      <img src="images/logo.png"/>
+    </div>
+
+    <input type="number" step="0.01" id="currency-amount" placeholder="GBP amount"/>
+    <select id="currency-exchangeto">
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="cny">CNY</option>
+    </select>
+    <button class="submit-btn">Convert</button>
+    <div class="result"></div>
+
+
+    <button class="currency-back" onclick="location.href='index.html#home-page'">Back to homepage</button>
+
+  </div>
+
+
+
+  <div data-role="footer">
+    <h4>Andrew Bolt (S188219)</h4>
+  </div>
+
+
 
   <script type="text/javascript" src="cordova.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>

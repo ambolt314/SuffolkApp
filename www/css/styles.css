@@ -58,3 +58,14 @@ body {
   border: 0;
   text-shadow: none;
 }
+
+#currency-page .currency-back {
+  margin-top: 40px;
+}
+
+#currency-page .result{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+  font-size: 25px;
+}
