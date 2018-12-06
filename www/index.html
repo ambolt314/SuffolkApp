@@ -27,6 +27,7 @@
     <button onclick="location.href='index.html#about-page'">About the university</button>
     <button onclick="location.href='index.html#faq-page'">Frequently asked questions (FAQ)</button>
     <button onclick="location.href='index.html#currency-page'">Currency converter</button>
+    <button onclick="location.href='index.html#restaurants-page'">Restaurants near me</button>
 
 
     <div data-role="footer">
@@ -127,13 +128,21 @@
   </div>
 
   <div data-role="page" id="option-page">
-  <div data-role="header">App Options</div>
+    <div data-role="header">App Options</div>
 
-  <form>
-    <input type="text" id="option-name"/>
-    <button class="submit-btn">Save options</button>
-  </form>
+    <form>
+      <input type="text" id="option-name"/>
+      <button class="submit-btn">Save options</button>
+    </form>
 
+
+    <button class="option-back" onclick="location.href='index.html#home-page'">Back to homepage</button>
+  </div>
+
+  <div data-role="page" id="restaurants-page">
+    <div data-role="header">Restaurants near me</div>
+
+    <ul class="restaurant-list"></ul>
 
     <button class="option-back" onclick="location.href='index.html#home-page'">Back to homepage</button>
   </div>

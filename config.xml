@@ -6,4 +6,5 @@
 <author email="S188219@uos.ac.uk">Andrew Bolt</author>
 <access origin="*"/>
 <plugin name="cordova-plugin-whitelist"/>
+<plugin name="cordova-plugin-geolocation" source="npm"/>
 </widget>

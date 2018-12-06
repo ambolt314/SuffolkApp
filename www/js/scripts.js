@@ -45,3 +45,29 @@ if(currentUser) {
 }
 
 options.init();
+
+
+var restaurants = {
+  init: function() {
+    navigator.geolocation.getCurrentPosition(restaurants.success);
+  },
+  success: function(position) {
+    var lat = position.coords.latitude;
+    var long = position.coords.longitude;
+
+    restaurants.getRestaurants(lat, long);
+    console.log("Latitude: " + lat);
+    console.log("Longitude: " + long);
+  },
+  getRestaurants: function(lat, long) {
+    var url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + lat + ',' + long + '&radius=500&types=cafe&key=AIzaSyAvoXPlBM15UVJb2_sarU1Enlw4jQCkjLo';
+    console.log("Site url: " + url);
+    $.get(url, function(data) {
+      $.each(data.results, function(index, restaurant) {
+        $('.restaurant-list').append('<li><h3>'+ restaurant.name + '</h3><p>' + restaurant.vicinity + '</p></li>');
+      });
+    });
+  }
+};
+
+restaurants.init();
