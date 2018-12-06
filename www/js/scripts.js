@@ -26,3 +26,22 @@ var currencyConverter = {
 };
 
 currencyConverter.init();
+
+var options = {
+  init: function() {
+    $('#option-page .submit-btn').click(function() { options.save();});
+  },
+  save: function() {
+    var userName = $('#option-page #option-name').val();
+    localStorage.setItem('userName', userName);
+    $('#home-page p').html('Welcome back, ' + userName);
+    location.href = 'index.html#home-page';
+  }
+};
+
+var currentUser = localStorage.getItem('userName');
+if(currentUser) {
+  $('#home-page p').html('Welcome back, ' + currentUser);
+}
+
+options.init();
